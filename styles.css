@@ -1,0 +1,158 @@
+@font-face { 
+    font-family:'ROMANTIC'; 
+    src: url(https://dl.dropbox.com/s/xggwcxb6mlf6pwq/ROMANTIC.TTF); 
+    }
+
+@font-face {
+        font-family: Pixelated MS Sans Serif;
+        src: url(https://dl.dropbox.com/s/tbas0823c5svwxz/qgjjre.woff);
+      }
+  
+
+    body {
+        background-image: url(pat2.gif);
+        background-attachment: fixed;
+        cursor: url(ribbon.gif), auto;
+        animation: scroll 90s linear infinite;
+    }
+
+    @keyframes scroll {
+        100%{
+         background-position:0px 3000px;
+       }
+     }
+
+     ::-webkit-scrollbar-thumb {background-color:transparent;}
+     ::-webkit-scrollbar {background-color:transparent; width:0px; height:0px;}
+    
+    
+    * { 
+      padding: 0; 
+      margin: 0; 
+      box-sizing: border-box; 
+    }
+    
+    #container {
+      margin: 50vh auto 0;
+      transform: translateY(-50%);
+      width: 12.5em;
+      height: 14.5em;
+      border: 1px solid #f0a5cd;
+      border-radius: 0px 8px 8px 8px;
+      background-image: linear-gradient(180deg, #ffe8f5 0%, #FFFFFF 100%);
+      background-position: 0% 0%;
+      background-repeat: repeat;
+      background-size: cover;
+      padding: .4em;
+      filter: drop-shadow(0px 0px 10px rgb(107, 107, 107));
+      cursor: url(ribbon.gif), auto;
+    }
+    
+    .text {
+      text-align: center;
+      color: #f0a5cd;
+      font-size: 1.3em;
+      text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff, 0 0; 
+      font-family: 'ROMANTIC';
+      position: relative;
+      z-index: 10;
+    }
+    
+    mark {
+      border-radius: 90%;
+      border: 1px solid #fff;
+      -webkit-filter: drop-shadow(0px 0px 1px #fff);
+      background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255, 232, 245,1) 50%, rgba(255,255,255,1) 100%);
+      padding-left: 1em;
+      padding-right: 1em;
+      font-family: 'ROMANTIC';
+      color: #f0a5cd;
+      position: relative;
+      z-index: 10;
+      font-size: 28px;
+    }
+    
+    .box {
+      width: 100%;
+      height: 4.1em;
+      padding: 0 5px 5px 5px;
+      position: relative;
+      bottom: .4em;
+    }
+    
+    .about {
+      font-family: 'Kosugi Maru', sans-serif;
+      font-size: 0.61rem;
+      color: #000;
+      text-shadow: none;
+      text-align: justify;
+    }
+
+    .about p {
+        text-align: center;
+        margin-top: 0.25rem;
+        margin-bottom: 0.2rem;
+      }
+
+    img {
+      position: relative;
+      bottom: .3em;
+    }
+
+    .fogmask { 
+        -webkit-mask-image: url(https://i.ibb.co/JjDXBPr/ED5929-CE-1-D66-4-EC4-8-F8-A-14792-D8-F2384.png); 
+        -webkit-mask-size: 110%; 
+        -webkit-mask-repeat: no-repeat; 
+        -webkit-mask-position: center;
+        cursor: url(ribbon.gif), auto;} 
+    
+    a:hover { webkit-filter: blur(0.5px); filter: blur(0.5px); }
+
+    #musicplayer{
+        width: 100%;
+        height: 12%;
+        border: 1px solid #f0a5cd;
+        background: #FFFFFF;
+        border-radius: 0 8px 8px 8px;
+        overflow: hidden;
+        margin-top: 1.6rem;
+        display: block;
+        font-family: 'Kosugi Maru', sans-serif;
+        font-size: 0.1rem;
+        z-index: 999;
+    }
+     
+     
+    .controls{
+        padding:5px;
+        font-size:15px !important;
+        margin:-1px;
+    }
+     
+    .songtitle{
+        width:161px;
+        display:flex;
+        color:#000000;
+        text-align:center;
+        font-size:0.61rem;
+        color:#fff;
+        text-shadow: -.8px 0 black, 0 .8px black, .8px 0 black, 0 -.8px black;
+    }
+     
+    i.fas.fa-pause:hover{
+        cursor:help;
+    }
+    
+    i.fas.fa-play:hover{
+        cursor:help;
+    }
+     
+    i.fas.fa-pause{
+        color:#f0a5cd; 
+        font-size:0.7rem !important;
+    }
+     
+    i.fas.fa-play{
+        color:#f0a5cd; 
+        font-size:0.7rem !important;
+    }

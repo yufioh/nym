@@ -1,0 +1,52 @@
+<script src="https://kit.fontawesome.com/f936906ae0.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+
+<div id="container">
+  <div class="text"> <mark>.Nymphia.</mark></div>
+
+<img src="kit.png" width="100%" class="fogmask">
+<div class="box">
+     <div class="about">
+        <p>
+        <span style="text-align:center;font-size:0.61rem;color:#fff;text-shadow: -.8px 0 black, 0 .8px black, .8px 0 black, 0 -.8px black;">
+            <marquee scrollamount="6">✦ ニンフィア ✦</marquee></p>
+            yufi. 25 y/o. mexican. capricorn. infp. loves ♥: lu, love live!, chungha and genshin. sonoda umi and sangonomiya kokomi are the best girls. μ's music makes me feel warm.<br><br>  
+        </div>
+</div>
+
+<div id="musicplayer">
+<table><tr><td>
+<div class="controls">
+<div class="play" style="display:inline-block">
+<i class="fas fa-play" onclick="play()"></i>
+</div>
+</div></td><td>
+<div class="songtitle">
+    <marquee scrollamount="6">♪ me!me!me! ♪</marquee>
+</div></td></tr></table>
+<audio id="music" src="mememe.mp3"></audio> 
+</div>
+
+<script>
+let player = document.getElementById("music");
+ 
+function play(){
+    player.play();
+    document.querySelector('.play').innerHTML = "<i class='fas fa-pause' onclick='pause()'></i>";
+}
+ 
+function pause(){
+    player.pause();
+    document.querySelector('.play').innerHTML = "<i class='fas fa-play' onclick='play()'></i>";
+}
+ 
+player.onended = function(){
+    document.querySelector('.play').innerHTML = "<i class='fas fa-play' onclick='play()'></i>";
+}
+</script>
+
+</div>
+       
